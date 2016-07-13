@@ -1,4 +1,4 @@
-dotenv-loader
+dotenv-vars
 ===
 
 The slimmest module to load a .env file in your project path, setting each row in environment variables.
