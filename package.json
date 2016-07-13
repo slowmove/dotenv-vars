@@ -1,0 +1,11 @@
+{
+  "name": "dotenv-loader",
+  "version": "1.0.0",
+  "description": "Loads a .env file in your project path, setting each row in environment variables.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "erik.johansson87@gmail.com",
+  "license": "ISC"
+}
