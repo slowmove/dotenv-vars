@@ -1,5 +1,5 @@
 {
-  "name": "dotenv-loader",
+  "name": "dotenv-vars",
   "version": "1.0.0",
   "description": "Loads a .env file in your project path, setting each row in environment variables.",
   "main": "index.js",
