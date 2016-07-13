@@ -1,7 +1,7 @@
 dotenv-loader
 ===
 
-Loads a .env file in your project path, setting each row in environment variables.
+The slimmest module to load a .env file in your project path, setting each row in environment variables.
 
 ## Installation
 ``` npm install --save dotenv-vars ```
