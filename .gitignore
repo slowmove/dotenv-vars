@@ -1,3 +1,4 @@
 .env
 .vscode
 jsconfig.json
+npm-debug.log
