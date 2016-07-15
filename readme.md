@@ -3,6 +3,8 @@ dotenv-vars
 
 The slimmest module to load a .env file in your project path, setting each row in environment variables.
 
+[![NPM](https://nodei.co/npm/dotenv-vars.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/dotenv-vars/)
+
 ## Installation
 ``` npm install --save dotenv-vars ```
 
