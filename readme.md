@@ -11,10 +11,17 @@ The slimmest module to load a .env file in your project path, setting each row i
 - In the top of your main file put ``` require('dotenv-vars') ```
 
 ## Example
+Supports both ```[Segment titles]``` as well as ```# comments```
 ### .env
 ```
+[Environment]
 NODE_ENV=debug
 PORT=3000
+
+[Amazon]
+# AWS_ACCESS_KEY_ID=
+# AWS_SECRET_ACCESS_KEY=
+# AWS_SESSION_TOKEN=
 ```
 
 ### index.js
