@@ -2,3 +2,6 @@
 .vscode
 jsconfig.json
 npm-debug.log
+node_modules
+typings
+typings.json
