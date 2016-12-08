@@ -11,8 +11,9 @@ try {
         if(envKeyVal.length == 0 || envKeyVal.indexOf('=') == -1 || envKeyVal.indexOf('#') > -1) return;
         var key = envKeyVal.split('=')[0].trim(),
             val = envKeyVal.split('=')[1].trim();
-        process.env[key] = val;        
-    }, this);    
+        if(!process.env[key])
+            process.env[key] = val;
+    }, this);
 } catch (error) {
-    
+
 }
