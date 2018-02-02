@@ -30,7 +30,7 @@ PORT=3000
 ```javascript
 require('dotenv-vars');
 
-console.log('process.env.PORT');
+console.log(process.env.PORT);
 ```
 
 Prints: ```3000```
