@@ -20,5 +20,5 @@ try {
     if (!process.env[key]) process.env[key] = val;
   });
 } catch (error) {
-  console.info("Couldn't parse the .env file");
+  // Gracefully ignore
 }
