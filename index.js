@@ -1,19 +1,23 @@
-var fs = require('fs'),
-    path = require('path'),
-    dir = path.dirname(require.main.filename),
-    envfilepath = dir + path.sep + '.env';
+const fs = require("fs");
+const path = require("path");
+const dir = path.dirname(require.main.filename);
+const envfilepath = dir + path.sep + ".env";
 
 try {
-    var envFile = fs.readFileSync(envfilepath, 'utf8');
-    var envArray = envFile.split('\n');
+  const envFile = fs.readFileSync(envfilepath, "utf8");
+  const envArray = envFile.split("\n");
 
-    envArray.forEach(function(envKeyVal) {
-        if(envKeyVal.length == 0 || envKeyVal.indexOf('=') == -1 || envKeyVal.indexOf('#') > -1) return;
-        var key = envKeyVal.split('=')[0].trim(),
-            val = envKeyVal.split('=')[1].trim();
-        if(!process.env[key])
-            process.env[key] = val;
-    }, this);
+  envArray.forEach(envKeyVal => {
+    if (
+      envKeyVal.length == 0 ||
+      envKeyVal.indexOf("=") == -1 ||
+      envKeyVal.indexOf("#") > -1
+    )
+      return;
+    const key = envKeyVal.split("=")[0].trim(),
+      val = envKeyVal.split("=")[1].trim();
+    if (!process.env[key]) process.env[key] = val;
+  });
 } catch (error) {
-
+  console.info("Couldn't parse the .env file");
 }

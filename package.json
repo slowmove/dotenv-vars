@@ -22,5 +22,11 @@
   },
   "bugs": {
     "url": "https://github.com/slowmove/dotenv-loader/issues"
+  },
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "prettier": "^1.15.3"
   }
 }
