@@ -11,7 +11,7 @@ try {
     if (
       envKeyVal.length === 0 ||
       !envKeyVal.includes("=") ||
-      envKeyVal.charAt(0) === "#"
+      envKeyVal.startsWith("#")
     )
       return;
     const i = envKeyVal.indexOf("=");
