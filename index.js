@@ -9,13 +9,14 @@ try {
 
   envArray.forEach(envKeyVal => {
     if (
-      envKeyVal.length == 0 ||
-      envKeyVal.indexOf("=") == -1 ||
-      envKeyVal.indexOf("#") > -1
+      envKeyVal.length === 0 ||
+      !envKeyVal.includes("=") ||
+      envKeyVal.charAt(0) === "#"
     )
       return;
-    const key = envKeyVal.split("=")[0].trim(),
-      val = envKeyVal.split("=")[1].trim();
+    const i = envKeyVal.indexOf("=");
+    const key = envKeyVal.substring(0, i).trim();
+    const val = envKeyVal.substring(i + 1).trim();
     if (!process.env[key]) process.env[key] = val;
   });
 } catch (error) {
