@@ -1,6 +1,8 @@
 const fs = require("fs");
 const path = require("path");
-const dir = path.dirname(require.main.filename);
+const dir = !require.main.filename.includes("node_modules")
+  ? path.dirname(require.main.filename)
+  : process.cwd();
 const envfilepath = dir + path.sep + ".env";
 
 try {
