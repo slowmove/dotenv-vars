@@ -1,6 +1,6 @@
 {
   "name": "dotenv-vars",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "The slimmest module to load a .env file in your project path, setting each row in environment variables.",
   "keywords": [
     "utils",
